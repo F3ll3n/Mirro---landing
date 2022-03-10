@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width: 100%;
+    background-color: #fff;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 13px 0 13px 0;
+}
+header .logo{
+    
+    display: flex;
+    align-items: center;
+}
+header .logo a{
+    height: 30px;
+    display: block;
+}
+header .header_right{
+    width: 488px;
+}
+header .header_right ul{
+    width: 346px;
+    padding: 0px;
+}
+header .header_right ul li{
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+header .header_right ul li::after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    width: 0%;
+    height: 3px;
+    transition: .3s;
+    background-color: #3A5F56;  
+}
+header .header_right ul li:hover:after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: #3A5F56;  
+}
+
+header .header_right ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+header .header_right .basket-img{
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+header .header_right .basket a{
+    text-decoration: none;
+}
+header .header_right .basket{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #3A5F56;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: .3s ease-in-out;
+}
+header .header_right .basket:hover{
+    background-color: #86c5b6;
+}
+header .header_right .basket p{
+    font-size: 16px;
+    color: #fff;
+}
+header .header_right .basket span{
+    display: block;
+    font-size: 11px;
+    color: #3A5F56;
+}
+header .header_right .basket .basket_items{
+    background-color: #fff;
+    height: 19px;
+    width: 19px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+header .header_right .button-nav{
+    width: 122px;
+    box-sizing: border-box;
+    padding: 13px 18px;
+}
+header .header_right .Cart-text{
+    margin: 0 0 0 0;
+}
+.wrapper .main-banner{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 974px;
+    background-color: #F4F3F0;
+}
+
+.wrapper .main-banner .main-banner_left {
+    max-width: 525px;
+    width: 100%;
+}
+.wrapper .main-banner .main-banner_right {
+    padding: 100px 0;
+    max-width: 552px;
+    width: 100%;
+} 
+.wrapper .main-banner .main-banner_left h1 {
+    line-height: 58px;
+    font-size: 48px;
+    font-family: 'Source Serif Pro', serif;
+    color: #3A5F56;
+}
+.wrapper .main-banner .main-banner_left p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.wrapper .main-banner .main-banner_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper .main-banner .light-left{
+    position: absolute;
+    right: -180px;
+    top: -180px;
+}
+.wrapper .main-banner .light-right{
+    position: absolute;
+    bottom: -180px;
+    left: -180px;
+}
+.wrapper .main-banner .main-banner_right img{
+    max-width: 582px;
+    width: 100%;
+}
